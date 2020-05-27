@@ -1,11 +1,12 @@
 
-GET http://localhost:8000/questions
-
+GET http://localhost:9082/questions
 ###
-POST http://localhost:8000/questions
+GET https://ws.mehmetemindemir.com/questions
+###
+POST http://localhost:9082/questions
 Content-Type: application/json
 
-[
+
 {
   "c1": "↵the Convention of Rome.↵",
   "c2": "↵the Convention of Paris.↵",
@@ -13,16 +14,22 @@ Content-Type: application/json
   "c4": "↵the Convention of Tokyo.↵",
   "qId": "Nº 96626",
   "qText": "The convention on offenses and certain acts committed on board aircraft, is called:"
-},
-  {
-    "c1": "↵the Convention of Rome.↵",
-    "c2": "↵the Convention of Paris.↵",
-    "c3": "↵the Convention of Chicago.↵",
-    "c4": "↵the Convention of Tokyo.↵",
-    "qId": "Nº 96626",
-    "qText": "The convention on offenses and certain acts committed on board aircraft, is called:"
-  }
-]
+}
+###
+###
+POST https://ws.mehmetemindemir.com/questions
+Content-Type: application/json
+
+
+{
+  "c1": "↵the Convention of Rome.↵",
+  "c2": "↵the Convention of Paris.↵",
+  "c3": "↵the Convention of Chicago.↵",
+  "c4": "↵the Convention of Tokyo.↵",
+  "qId": "Nº 96626",
+  "qText": "The convention on offenses and certain acts committed on board aircraft, is called:"
+}
+
 
 
 
